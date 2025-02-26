@@ -1,7 +1,7 @@
 public class armsstrong {
     public static void main(String[] args) {
         int number = 153; // Example number
-        int temp = number, sum = 0, digits = 0;
+        int  sum = 0, digits = 0;
 
         // Count the number of digits
         int n = number;
