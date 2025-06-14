@@ -1,0 +1,41 @@
+ class Thread1 extends Thread {
+    public void run(){
+        System.out.println("Thread a starts...")
+        for(int i=0;i<5;i++){
+            System.out.println("from Thread A..."+ i);
+
+        }
+        System.out.println("Thread A exits..")
+    }
+ }
+ class Thread2 extends Thread{
+    public void run(){
+    System.out.println("Thread B starts...");
+    for(int j=0;j<5;j++){
+     System.out.println("from thread B.."+ j)
+    }
+ }
+ 
+ }
+ class Thread3 extends Thread{
+    public void run(){
+        System.out.println("Thread C starts..")
+        for(int k=0;k<5;k++){
+            System.out.println("Thread C exits"+k)
+
+        }
+    }
+ }
+ class multithreading4{
+    public static void main(String args[]){
+        Thread1 t1 = new  Thread1();
+        Thread3 t2 = new Thread2();
+        Thread3 t3 = new Thread3();
+
+    t3.setPriority(Thread.MIN_PRIORITY);
+    t1.setPriority(Thread.MAX_PRIORITY);
+    t2.setPriority(Thread.getPriority()+1);
+    }
+ }
+ 
+ 

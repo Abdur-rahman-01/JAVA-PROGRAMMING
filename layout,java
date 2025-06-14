@@ -1,0 +1,40 @@
+import java.awt.*; // Importing the AWT package for GUI components
+ 
+    public class layout {
+        Frame f;
+    
+        layout() {
+            f = new Frame();
+            Button b1 = new Button("NORTH");
+            Button b2 = new Button("SOUTH");
+            Button b3 = new Button("EAST");
+            Button b4 = new Button("WEST");
+            Button b5 = new Button("CENTER");
+    
+            f.add(b1, BorderLayout.NORTH);
+            f.add(b2, BorderLayout.SOUTH);
+            f.add(b3, BorderLayout.EAST);
+            f.add(b4, BorderLayout.WEST);
+            f.add(b5, BorderLayout.CENTER);
+    
+            f.setSize(400, 400); // Set the size of the Frame to 400x400 pixels
+            f.setVisible(true); // Make the Frame visible
+        }
+    
+        public static void main(String[] args) {
+            new layout(); // Create a new instance of the layout class to display the GUI
+        }
+    }.add(b5,BorderLayout.CENTER);
+    f.setSize(400,400); // Set the size of the Frame to 400x400 pixelswhy
+    f.setVisible(true); // Make the Frame visible
+
+public static void main(String[] args) {
+    new layout(); // Create a new instance of the layout class to display the GUI
+    // The constructor of the layout class is called, which sets up the Frame and Buttons 
+    // The main method serves as the entry point for the program
+    // It creates an instance of the layout class, which in turn creates and displays the GUI components
+    // The program will run until the user closes the Frame window
+    // The main method is static, allowing it to be called without creating an instance of the class
+    // This is a common practice in Java for starting a program
+}
+

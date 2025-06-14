@@ -2,7 +2,10 @@ import java.util.StringTokenizer;
 public class stringss1 {
     public static void main(String[] args) {
         StringBuffer greeting = new StringBuffer("Hello, World!");
+        greeting.indexOf("World");
+        System.out.println(greeting.indexOf("World"));
         System.out.println(greeting);
+        greeting.replace(1, 3, "loss");
         greeting.append(" java");
         System.out.println(greeting);
         greeting.insert(7 , "Java ");
@@ -17,8 +20,7 @@ public class stringss1 {
         System.out.println(greeting);
         greeting.replace(4,6,"Java");
         System.out.println(greeting);
-
-
+         
 
         //string tokenizer
         StringTokenizer st = new StringTokenizer("methodist college of engineering and technology");
